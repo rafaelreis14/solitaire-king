@@ -1,0 +1,118 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>main</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content padding class="content">
+  <div class="content">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="4" text-left>
+          <ion-label>Time</ion-label>
+
+        </ion-col>
+        <ion-col size="4" text-center>
+          <ion-label>Score</ion-label>
+        </ion-col>
+        <ion-col size="4" text-right>
+          <ion-label>Moves</ion-label>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="1.71" dragula="bag" [(dragulaModel)]="list1">
+          <app-card [card]="list1[0]"></app-card>
+        </ion-col>
+        <ion-col size="1.71" dragula="bag" [(dragulaModel)]="list1">
+          <app-card [card]="list1[0]"></app-card>
+        </ion-col>
+        <ion-col size="1.71" dragula="bag" [(dragulaModel)]="list1">
+          <app-card [card]="list1[0]"></app-card>
+        </ion-col>
+        <ion-col size="1.71" dragula="bag" [(dragulaModel)]="list1">
+          <app-card [card]="list1[0]"></app-card>
+        </ion-col>
+        <ion-col size="1.71" offset="1.71">
+          <app-card [card]="list1[0]"></app-card>
+        </ion-col>
+        <ion-col size="1.71">
+          <app-card [card]="list1[0]"></app-card>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="1.71" class="cardList" dragula="bag" [(dragulaModel)]="list1">
+          <div *ngFor="let card of list1" class="card">
+            <app-card id="{{card}}" [card]="card"></app-card>
+          </div>
+
+        </ion-col>
+        <ion-col size="1.71" class="cardList" dragula="bag" [(dragulaModel)]="list2">
+          <div *ngFor="let card of list2" class="card">
+            <app-card [card]="card"></app-card>
+          </div>
+
+        </ion-col>
+        <ion-col size="1.71" class="cardList" dragula="bag" [(dragulaModel)]="list3">
+          <div *ngFor="let card of list3" class="card">
+            <app-card [card]="card"></app-card>
+          </div>
+
+        </ion-col>
+        <ion-col size="1.71" class="cardList" dragula="bag" [(dragulaModel)]="list4">
+          <div *ngFor="let card of list4" class="card">
+            <app-card [card]="card"></app-card>
+          </div>
+
+        </ion-col>
+        <ion-col size="1.71" class="cardList" dragula="bag" [(dragulaModel)]="list5">
+          <div *ngFor="let card of list5" class="card">
+            <app-card [card]="card"></app-card>
+          </div>
+
+        </ion-col>
+        <ion-col size="1.71" class="cardList" dragula="bag" [(dragulaModel)]="list6">
+          <div *ngFor="let card of list6" class="card">
+            <app-card [card]="card"></app-card>
+          </div>
+
+        </ion-col>
+        <ion-col size="1.71" class="cardList" dragula="bag" [(dragulaModel)]="list7">
+          <div *ngFor="let card of list7" class="card">
+            <app-card [card]="card"></app-card>
+          </div>
+
+        </ion-col>
+
+      </ion-row>
+    </ion-grid>
+  </div>
+
+
+
+
+
+
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-icon slot="icon-only" name="undo"></ion-icon>
+      </ion-button>
+      <ion-button>
+        <ion-icon slot="icon-only" name="shuffle"></ion-icon>
+      </ion-button>
+
+    </ion-buttons>
+    <ion-buttons slot="end">
+
+      <ion-button>
+        <ion-icon slot="icon-only" name="settings"></ion-icon>
+      </ion-button>
+      <ion-button (click)="distribute()">
+        <ion-icon slot="icon-only" name="add-circle-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

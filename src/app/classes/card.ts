@@ -1,32 +1,32 @@
 export enum Suit {
-  'Spades',
-  'Hearts',
-  'Diamonds',
-  'Clubs',
+  'spades',
+  'hearts',
+  'diamonds',
+  'clubs',
 } 
 
 export enum List {
-  'Reserve',
-  'SuitesList1',
-  'SuitesList2',
-  'SuitesList3',
-  'SuitesList4',
-  'List1',
-  'List2',
-  'List3',
-  'List4',
-  'List5',
-  'List6',
-  'List7',
+  'none',
+  'reserve',
+  'suitesList1',
+  'suitesList2',
+  'suitesList3',
+  'suitesList4',
+  'list1',
+  'list2',
+  'list3',
+  'list4',
+  'list5',
+  'list6',
+  'list7',
 }
 
 export class Card {
   id: string;
-  number: number;
+  cardNumber: number;
   suit: Suit;
   img: string;
   flipped: boolean;
   list: List;
-
 
 }

@@ -1,0 +1,27 @@
+ion-content {
+  --ion-background-color: #009F18;
+}
+
+// ion-col {
+//   border: 1px solid red;
+// }
+
+
+
+.cardList {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.card {
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: 100px;
+  margin-bottom: -70px;
+  clear: both;
+}
+.card:last-child {
+  margin-bottom: 0;
+}
